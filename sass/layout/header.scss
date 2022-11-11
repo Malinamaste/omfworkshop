@@ -1,8 +1,9 @@
 .header {
+    display: flex;
     background: $colour-primary;
 }
 
-@media #{$mobile} {
+@media #{$mobile-responsive} {
     .header {
         background: $colour-secondary;
     }

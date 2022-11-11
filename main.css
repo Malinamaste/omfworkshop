@@ -24,6 +24,7 @@ h1 {
 
 /* components/buttons */
 .header {
+  display: flex;
   background: #9356DC;
 }
 
