@@ -26,7 +26,7 @@ h1 {
   display: flex;
   justify-content: center;
   background: #FFF;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  /*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);*/
 }
 .header__logo {
   display: flex;
@@ -52,6 +52,10 @@ h1 {
 }
 .city__icon span {
   padding-left: 1rem;
+}
+
+.explore {
+  background: rgb(248, 248, 248);
 }
 
 /*    pages/about
