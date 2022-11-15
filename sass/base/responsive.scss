@@ -1,2 +1,3 @@
-$mobile: 480px;
-$mobile-responsive : "only screen and (max-width : #{$mobile})";
+$mobile-down: 320px;
+$mobile-up : 480px;
+$mobile-responsive : "only screen and (min-width : #{$mobile-down}) and (max-width : #{$mobile-up})";

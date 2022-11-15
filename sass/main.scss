@@ -1,6 +1,6 @@
 @import "./utils/variables";
 /* _functions */
-/* _mixins */
+@import "./utils/mixins";
 /* _extensions */
 
 @import "./base/responsive.scss";
@@ -14,6 +14,6 @@
     layout/container
     layout/form     */
 
-/*  pages/work
-    pages/about
+@import "./pages/index.scss";
+/*    pages/about
     pages/project   */

@@ -1,5 +1,4 @@
 /* _functions */
-/* _mixins */
 /* _extensions */
 *,
 *::after,
@@ -25,19 +24,37 @@ h1 {
 /* components/buttons */
 .header {
   display: flex;
-  background: #9356DC;
+  justify-content: center;
+  background: #FFF;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.header__logo {
+  display: flex;
+  justify-content: center;
+  margin: 0.7em 0 0.4em 0;
+}
+.header img {
+  width: 42%;
 }
 
-@media only screen and (max-width : 480px) {
-  .header {
-    background: #FF79DA;
-  }
-}
 /*   layout/nav
     layout/container
     layout/form     */
-/*  pages/work
-    pages/about
+.city {
+  display: flex;
+  justify-content: center;
+  background: rgb(240, 240, 240);
+  padding: 1rem;
+}
+.city__icon {
+  color: #424242;
+  text-decoration: none;
+}
+.city__icon span {
+  padding-left: 1rem;
+}
+
+/*    pages/about
     pages/project   */
 
 /*# sourceMappingURL=main.css.map */

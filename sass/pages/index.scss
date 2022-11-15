@@ -1,0 +1,12 @@
+.city {
+    @include flex-center;
+    background:rgb(240, 240, 240);
+    padding: $padding;
+    &__icon {
+        color: #424242;
+        text-decoration: none;
+        span {
+            padding-left: $padding;
+        }
+    }
+}

@@ -1,10 +1,14 @@
 .header {
-    display: flex;
-    background: $colour-primary;
-}
-
-@media #{$mobile-responsive} {
-    .header {
-        background: $colour-secondary;
+    @include flex-center;
+    background: $colour-white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    &__logo {
+        @include flex-center;
+        margin: $logo-margin;
+    }
+    img {
+        width: 42%;
     }
 }
+
+@media #{$mobile-responsive} {}
