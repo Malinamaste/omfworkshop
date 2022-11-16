@@ -21,7 +21,21 @@ h1 {
   font-family: "Shrikhand", cursive;
 }
 
-/* components/buttons */
+h2 {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.btn {
+  color: #FFF;
+  background: linear-gradient(172deg, #FF79DA 20%, rgba(147, 86, 220, 0.8533788515) 82%);
+  padding: 1rem 1.5rem;
+  border-radius: 30px;
+  text-decoration: none;
+  margin: 18px 0;
+  box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
 .header {
   display: flex;
   justify-content: center;
@@ -56,6 +70,16 @@ h1 {
 
 .explore {
   background: rgb(248, 248, 248);
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.explore p {
+  font-weight: 100;
+  font-size: 1.1rem;
+  margin: 15px 0;
 }
 
 /*    pages/about

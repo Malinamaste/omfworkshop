@@ -2,3 +2,13 @@
     display: flex;
     justify-content: center;
 }
+
+@mixin btn {
+    color: $colour-white;
+    background: linear-gradient(172deg, $colour-secondary 20%, rgba(147,86,220,0.8533788515406162) 82%);
+    padding: $padding $padding + 0.5rem;
+    border-radius: 30px;
+    text-decoration: none;
+    margin: 18px 0;
+    box-shadow: 0 6px 8px 0 rgb(0 0 0 / 20%);
+}

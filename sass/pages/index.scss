@@ -13,4 +13,14 @@
 
 .explore {
     background: rgb(248, 248, 248);
+    padding: $padding + 1.5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    p {
+        font-weight: 100;
+        font-size: 1.1rem;
+        margin: 15px 0;
+    }
 }
