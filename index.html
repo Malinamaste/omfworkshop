@@ -23,17 +23,45 @@
             <img src="./public/img/logo/ohmyfood.png" alt="Ohmyfood">
         </h1>
     </header>
-    <main class="container">
+    <main>
         <div class="city">
             <a href="#" class="city__icon">
                 <i class="fa-solid fa-location-dot"></i>
                 <span>Paris, Belleville</span>
             </a>
         </div>
-        <section class="explore">
+        <section id="explore">
             <h2>Réservez le menu qui</br>vous convient</h2>
             <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
             <a href="#" class="btn">Explorer nos restaurants</a>
+        </section>
+        <section class="container">
+            <h2>Fonctionnement</h2>
+            <nav class="nav">
+                <ul>
+                    <li class="nav__link"><a href="#"><!--<i class="fa-solid fa-circle-1"></i>--><i class="fa-solid fa-mobile-screen-button"></i><span>Choisissez un restaurant</span></a></li>
+                    <li class="nav__link"><a href="#"><!--<i class="fa-solid fa-circle-2"></i>--><i class="fa-solid fa-list-ul"></i><span>Composez votre menu</span></a></li>
+                    <li class="nav__link"><a href="#"><!--<i class="fa-solid fa-circle-3"></i>--><i class="fa-sharp fa-solid fa-store"></i><span>Dégustez au restaurant</span></a></li>
+                </ul>
+            </nav>
+        </section>
+        <section class="container container__cards">
+            <h2>Restaurants</h2>
+            <div class="cards-list">
+                <article class="card"><a href="#">
+                    <span class="card__new">Nouveau</span>
+                    <img src="./public/img/restaurants/la_palette_du_gout.jpg" alt="La palette du goût" class="card__img">
+                    <div class="prout">
+                        <div class="card__info">
+                            <h3 class="card__info--heading">La palette de goût</h3>
+                            <p class="card__info--byline">Ménilmontant</p>
+                        </div>
+                        <div class="heart">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                    </div>
+                </a></article>
+            </div>
         </section>
     </main>
 </body>
