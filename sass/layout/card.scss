@@ -4,6 +4,7 @@
     background: $colour-white;
     border-radius: 15px;
     position: relative;
+    @include shadow;
     &__new {
         position: absolute;
         left: 72%;
