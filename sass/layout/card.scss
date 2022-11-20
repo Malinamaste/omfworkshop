@@ -4,6 +4,7 @@
     background: $colour-white;
     border-radius: 15px;
     position: relative;
+    transition: .3s;
     @include card-shadow;
     &__new {
         position: absolute;
@@ -31,5 +32,8 @@
             font-weight: 100;
             font-size: 1.05rem;
         }
+    }
+    &:hover {
+        box-shadow: 0 6px 12px 0 rgb(0 0 0 / 20%);
     }
 }

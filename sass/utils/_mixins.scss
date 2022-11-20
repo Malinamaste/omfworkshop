@@ -19,4 +19,26 @@
     text-decoration: none;
     margin: 18px 0;
     @include shadow;
+    transition: 0.3s;
+    position: relative;
+    z-index: 1;
+    &:hover, :active {
+        &::after {
+            opacity: 1;
+        }
+    }
+    &::after {
+        border-radius: 30px;
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(192deg, lighten($colour-primary, 5) 0%, darken($colour-secondary, 3) 100%);
+        opacity: 0;
+        z-index: -1;
+        transition: opacity 250ms;
+        box-shadow: 0 7px 9px 0 rgba(0,0,0,0.2);
+    }
 }
