@@ -1,0 +1,6 @@
+.footer {
+    background: darken($colour-light-grey, 75%);
+    &__logo, a {
+        color: $colour-white;
+    }
+}

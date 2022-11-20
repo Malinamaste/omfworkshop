@@ -27,6 +27,7 @@
 .container {
     padding: $padding * 3 $padding + .2rem;
     &__cards {
+        padding: 3.3rem 1.2rem;
         background: $colour-light-grey;
     }
 }
@@ -34,7 +35,6 @@
 .nav {
     margin: $padding + .5rem 0;
     ul{
-        list-style-type: none;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -63,12 +63,17 @@
         }
         &:hover {
             background: rgba(194, 180, 237, 0.3);
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
         }
     }
 }
 
 .cards-list {
-    margin-top: 1.5rem;
+    margin: 1.4rem 0 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 1075px;
 }
 
 .prout {
@@ -81,8 +86,16 @@
 
 .heart {
     font-size: 1.4rem;
-    color: grey;
-    &:hover {
+    &--main {
+        position: absolute;
+        color: grey;
+        background: transparent;
+    }
+    &--bkgd {
+        position: relative;
+        left: 0;
+        top: -1px;
+        z-index: -1;
         color: red;
     }
 }

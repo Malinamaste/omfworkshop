@@ -7,6 +7,10 @@
     box-shadow: 0 6px 8px 0 rgb(0 0 0 / 20%);
 }
 
+@mixin card-shadow {
+    box-shadow: 0 2px 10px 0 rgb(0 0 0 / 20%);
+}
+
 @mixin btn {
     color: $colour-white;
     background: linear-gradient(172deg, $colour-secondary 20%, rgba(147,86,220,0.8533788515406162) 82%);
