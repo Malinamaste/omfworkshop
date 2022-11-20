@@ -120,9 +120,29 @@ h2 {
 
 .footer {
   background: #393939;
+  padding: 1.8rem;
 }
-.footer__logo, .footer a {
+.footer__logo {
+  width: 6.5rem;
+  margin-bottom: 1.1rem;
+}
+.footer ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100px;
+}
+.footer a {
   color: #FFF;
+  display: flex;
+  align-items: center;
+}
+.footer a i {
+  margin-right: 10px;
+  font-size: 0.9rem;
+}
+.footer__link:nth-child(2) i {
+  font-size: 0.7rem;
 }
 
 .city {
