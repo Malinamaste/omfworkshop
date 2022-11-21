@@ -65,11 +65,23 @@ h2 {
   box-shadow: 0 7px 9px 0 rgba(0, 0, 0, 0.2);
 }
 
+.heart {
+  font-size: 1.4rem;
+}
+.heart--fill {
+  color: grey;
+}
+.heart--fill:hover {
+  animation: fill 0.3s ease-in-out;
+  background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
 .header {
   display: flex;
   justify-content: center;
-  background: #FFF;
-  /*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);*/
 }
 .header__logo {
   display: flex;
@@ -91,7 +103,7 @@ h2 {
 }
 .card__new {
   position: absolute;
-  left: 72%;
+  right: 2%;
   top: 5%;
   background: #99E2D0;
   padding: 0.5rem 0.8rem 0.2rem;
@@ -123,8 +135,11 @@ h2 {
   padding: 1.9rem;
 }
 .footer__logo {
+  font-family: "Shrikhand", cursive;
   width: 6rem;
   margin-bottom: 1.1rem;
+  color: #FFF;
+  font-weight: 200;
 }
 .footer ul {
   display: flex;
@@ -173,7 +188,7 @@ h2 {
 }
 
 .container {
-  padding: 3rem 1.2rem;
+  padding: 3rem 1.2rem 3rem 1.6rem;
 }
 .container__cards {
   padding: 3.3rem 1.2rem;
@@ -197,23 +212,32 @@ h2 {
 .nav__link a {
   padding: 1.7rem 0;
   display: flex;
-  padding-left: 15%;
-  align-items: baseline;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1.6rem;
 }
 .nav__link a i {
   color: grey;
-  margin-right: 20px;
   font-size: 1.2rem;
+  margin: 0 1.5rem;
 }
 .nav__link a span {
   font-weight: 500;
 }
-.nav__link a:hover {
+.nav__link--number {
+  background-color: #9356DC;
+  color: #FFF;
+  border-radius: 50%;
+  padding: 5px 9px;
+  margin-left: -40px;
+  font-size: 0.8rem;
+}
+.nav__link:hover {
   background: rgba(194, 180, 237, 0.3);
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   border-radius: 22px;
 }
-.nav__link a:hover i:hover {
+.nav__link:hover i {
   color: #9356DC;
 }
 
@@ -231,20 +255,6 @@ h2 {
   align-items: center;
   margin: 0 20px 0 15px;
   padding-top: 0.8rem;
-}
-
-.heart {
-  font-size: 1.4rem;
-}
-.heart--fill {
-  color: grey;
-}
-.heart--fill:hover {
-  animation: fill 0.3s ease-in-out;
-  background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: bold;
 }
 
 /*    pages/about

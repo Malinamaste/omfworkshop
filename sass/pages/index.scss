@@ -25,7 +25,7 @@
 }
 
 .container {
-    padding: $padding * 3 $padding + .2rem;
+    padding: 3rem 1.2rem 3rem 1.6rem;
     &__cards {
         padding: 3.3rem 1.2rem;
         background: $colour-light-grey;
@@ -33,40 +33,7 @@
 }
 
 .nav {
-    margin: $padding + .5rem 0;
-    ul{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        min-height: 278px;
-    }
-    &__link {
-        background: $colour-light-grey;
-        border-radius: 22px;
-        @include shadow;
-        & a {
-            padding: 1.7rem 0;
-            display: flex;
-            padding-left: 15%;
-            align-items: baseline;
-            i {
-                color: grey;
-                margin-right: 20px;
-                font-size: 1.2rem;
-            }
-            span {
-                font-weight: 500;
-            }
-            &:hover {
-                background: rgba(194, 180, 237, 0.3);
-                box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-                border-radius: 22px;
-                i:hover {
-                    color: $colour-primary;
-                }
-            }
-        }
-    }
+    @include nav;
 }
 
 .cards-list {
@@ -83,18 +50,4 @@
     align-items: center;
     margin: 0 20px 0 15px;
     padding-top: 0.8rem;
-}
-
-.heart {
-    font-size: 1.4rem;
-    &--fill {
-        color: grey;
-        &:hover {
-            animation: fill 0.3s ease-in-out;
-            background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-weight: bold;
-        }
-    }
 }

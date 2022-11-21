@@ -2,8 +2,11 @@
     background: darken($colour-light-grey, 75%);
     padding: $padding + .9rem;
     &__logo {
+        font-family: 'Shrikhand', cursive;
         width: 6rem;
         margin-bottom: 1.1rem;
+        color: $colour-white;
+        font-weight: 200;
     }
     ul {
         display: flex;

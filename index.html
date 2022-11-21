@@ -36,21 +36,30 @@
         <section id="explore">
             <h2>Réservez le menu qui</br>vous convient</h2>
             <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-            <a href="#" class="btn">Explorer nos restaurants</a>
+            <a href="#restaurants" class="btn">Explorer nos restaurants</a>
         </section>
         <!-- section fontionnement -->
         <section class="container">
             <h2>Fonctionnement</h2>
             <nav class="nav">
                 <ul>
-                    <li class="nav__link"><a href="#"><!--<i class="fa-solid fa-1"></i>--><i class="fa-solid fa-mobile-screen-button"></i><span>Choisissez un restaurant</span></a></li>
-                    <li class="nav__link"><a href="#"><i class="fa-solid fa-list-ul"></i><span>Composez votre menu</span></a></li>
-                    <li class="nav__link"><a href="#"><i class="fa-sharp fa-solid fa-store"></i><span>Dégustez au restaurant</span></a></li>
+                    <li class="nav__link"><a href="#">
+                        <div class="nav__link--number">1</div>
+                        <i class="fa-solid fa-mobile-screen-button"></i><span>Choisissez un restaurant</span>
+                    </a></li>
+                    <li class="nav__link"><a href="#">
+                        <div class="nav__link--number">2</div>
+                        <i class="fa-solid fa-list-ul"></i><span>Composez votre menu</span>
+                    </a></li>
+                    <li class="nav__link"><a href="#">
+                        <div class="nav__link--number">3</div>
+                        <i class="fa-sharp fa-solid fa-store"></i><span>Dégustez au restaurant</span>
+                    </a></li>
                 </ul>
             </nav>
         </section>
         <!-- section restaurants -->
-        <section class="container container__cards">
+        <section id="restaurants" class="container container__cards">
             <h2>Restaurants</h2>
             <div class="cards-list">
                 <article class="card"><a href="#">
@@ -108,12 +117,12 @@
     </main>
     <!-- footer -->
     <footer class="footer">
-        <img src="./public/img/logo/ohmyfoodwhite.png" alt="Ohmyfood" class="footer__logo">
+        <a href="./index.html"><h3 class="footer__logo">ohmyfood</h3></a>
         <ul>
             <li class="footer__link"><a href="#"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a></li>
             <li class="footer__link"><a href="#"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a></li>
             <li class="footer__link"><a href="#">Mentions légales</a></li>
-            <li class="footer__link"><a href="#">Contact</a></li>
+            <li class="footer__link"><a href="mailto:ohmyfood-contact@gmail.com">Contact</a></li>
         </ul>
     </footer>
 </body>

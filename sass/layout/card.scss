@@ -7,15 +7,7 @@
     transition: .3s;
     @include card-shadow;
     &__new {
-        position: absolute;
-        left: 72%;
-        top: 5%;
-        background: $label-new;
-        padding: 0.5rem 0.8rem 0.2rem;
-        font-size: .9rem;
-        font-weight: 500;
-        border-radius: 4px;
-        color: darken($label-new, 40%);
+        @include label-new;
     }
     &__img {
         width: 100%;

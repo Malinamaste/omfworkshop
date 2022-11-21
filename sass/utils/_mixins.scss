@@ -42,3 +42,75 @@
         box-shadow: 0 7px 9px 0 rgba(0,0,0,0.2);
     }
 }
+
+@mixin nav {
+    margin: $padding + .5rem 0;
+    ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 278px;
+    }
+    &__link {
+        background: $colour-light-grey;
+        border-radius: 22px;
+        @include shadow;
+        & a {
+            padding: 1.7rem 0;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 1.6rem;
+            i {
+                color: grey;
+                font-size: 1.2rem;
+                margin: 0 1.5rem;
+            }
+            span {
+                font-weight: 500;
+            }
+        }
+        &--number {
+            background-color: $colour-primary;
+            color: $colour-white;
+            border-radius: 50%;
+            padding: 5px 9px;
+            margin-left: -40px;
+            font-size: 0.8rem;
+        }
+        &:hover {
+            background: rgba(194, 180, 237, 0.3);
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            border-radius: 22px;
+            i {
+                color: $colour-primary;
+            }
+        }
+    }
+}
+
+@mixin heart {
+    font-size: 1.4rem;
+    &--fill {
+        color: grey;
+        &:hover {
+            animation: fill 0.3s ease-in-out;
+            background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: bold;
+        }
+    }
+}
+
+@mixin label-new {
+    position: absolute;
+    right: 2%;
+    top: 5%;
+    background: $colour-mint;
+    padding: 0.5rem 0.8rem 0.2rem;
+    font-size: .9rem;
+    font-weight: 500;
+    border-radius: 4px;
+    color: darken($colour-mint, 40%);
+}
