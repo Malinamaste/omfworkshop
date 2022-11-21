@@ -1,0 +1,11 @@
+.menu {
+    &__header{
+        width: 100%;
+    }
+    &__container {
+        @include main-menu;
+    }
+    &__info {
+        @include menu-title;
+    }
+}

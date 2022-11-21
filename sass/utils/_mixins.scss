@@ -114,3 +114,19 @@
     border-radius: 4px;
     color: darken($colour-mint, 40%);
 }
+
+@mixin main-menu {
+    background-color: $colour-light-grey;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    position: relative;
+    margin-top: -2rem;
+    padding: 2rem 1.3rem;
+}
+
+@mixin menu-title {
+    font-family: 'Shrikhand', cursive;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

@@ -1,10 +1,16 @@
 .header {
     @include flex-center;
+    &__arrow {
+        font-size: 1.3rem;
+        position: absolute;
+        left: 5%;
+        top: 3%;
+    }
     &__logo {
         @include flex-center;
         margin: $logo-margin;
-    }
-    img {
-        width: 42%;
+        img {
+            width: 42%;
+        }
     }
 }
