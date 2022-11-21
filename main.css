@@ -120,10 +120,10 @@ h2 {
 
 .footer {
   background: #393939;
-  padding: 1.8rem;
+  padding: 1.9rem;
 }
 .footer__logo {
-  width: 6.5rem;
+  width: 6rem;
   margin-bottom: 1.1rem;
 }
 .footer ul {
@@ -197,7 +197,7 @@ h2 {
 .nav__link a {
   padding: 1.7rem 0;
   display: flex;
-  margin-left: 15%;
+  padding-left: 15%;
   align-items: baseline;
 }
 .nav__link a i {
@@ -205,15 +205,16 @@ h2 {
   margin-right: 20px;
   font-size: 1.2rem;
 }
-.nav__link a i:hover {
-  color: #9356DC;
-}
 .nav__link a span {
   font-weight: 500;
 }
-.nav__link:hover {
+.nav__link a:hover {
   background: rgba(194, 180, 237, 0.3);
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 22px;
+}
+.nav__link a:hover i:hover {
+  color: #9356DC;
 }
 
 .cards-list {
@@ -224,7 +225,7 @@ h2 {
   min-height: 1075px;
 }
 
-.prout {
+.description {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -235,17 +236,15 @@ h2 {
 .heart {
   font-size: 1.4rem;
 }
-.heart--main {
-  position: absolute;
+.heart--fill {
   color: grey;
-  background: transparent;
 }
-.heart--bkgd {
-  position: relative;
-  left: 0;
-  top: -1px;
-  z-index: -1;
-  color: red;
+.heart--fill:hover {
+  animation: fill 0.3s ease-in-out;
+  background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
 }
 
 /*    pages/about

@@ -45,25 +45,26 @@
         border-radius: 22px;
         @include shadow;
         & a {
-            padding: $padding + .7rem 0;
+            padding: 1.7rem 0;
             display: flex;
-            margin-left: 15%;
+            padding-left: 15%;
             align-items: baseline;
             i {
                 color: grey;
                 margin-right: 20px;
                 font-size: 1.2rem;
-                &:hover {
-                    color: $colour-primary;
-                }
             }
             span {
                 font-weight: 500;
             }
-        }
-        &:hover {
-            background: rgba(194, 180, 237, 0.3);
-            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            &:hover {
+                background: rgba(194, 180, 237, 0.3);
+                box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+                border-radius: 22px;
+                i:hover {
+                    color: $colour-primary;
+                }
+            }
         }
     }
 }
@@ -76,7 +77,7 @@
     min-height: 1075px;
 }
 
-.prout {
+.description {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -86,16 +87,14 @@
 
 .heart {
     font-size: 1.4rem;
-    &--main {
-        position: absolute;
+    &--fill {
         color: grey;
-        background: transparent;
-    }
-    &--bkgd {
-        position: relative;
-        left: 0;
-        top: -1px;
-        z-index: -1;
-        color: red;
+        &:hover {
+            animation: fill 0.3s ease-in-out;
+            background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: bold;
+        }
     }
 }
