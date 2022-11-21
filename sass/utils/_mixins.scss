@@ -115,7 +115,7 @@
     color: darken($colour-mint, 40%);
 }
 
-@mixin main-menu {
+@mixin bkgd-menu {
     background-color: $colour-light-grey;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
@@ -128,5 +128,8 @@
     font-family: 'Shrikhand', cursive;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
+    h2 {
+        font-size: 1.75rem;
+    }
 }

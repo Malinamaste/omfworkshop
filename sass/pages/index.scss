@@ -1,12 +1,14 @@
 .city {
     @include flex-center;
-    background:rgb(240, 240, 240);
+    background: darken($colour-light-grey, 5%);
     padding: $padding;
     &__icon {
         color: #424242;
-        span {
-            padding-left: $padding;
-        }
+    }
+    input {
+        border: none;
+        background: none;
+        text-align: center;
     }
 }
 

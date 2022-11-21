@@ -3,9 +3,13 @@
         width: 100%;
     }
     &__container {
-        @include main-menu;
+        @include bkgd-menu;
     }
     &__info {
         @include menu-title;
+        .heart {
+            margin-right: 3%;
+            font-size: 1.6rem;
+        }
     }
 }

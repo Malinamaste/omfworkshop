@@ -169,14 +169,16 @@ h2 {
 .city {
   display: flex;
   justify-content: center;
-  background: rgb(240, 240, 240);
+  background: #ebebeb;
   padding: 1rem;
 }
 .city__icon {
   color: #424242;
 }
-.city__icon span {
-  padding-left: 1rem;
+.city input {
+  border: none;
+  background: none;
+  text-align: center;
 }
 
 #explore {
@@ -278,7 +280,14 @@ h2 {
   font-family: "Shrikhand", cursive;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
+}
+.menu__info h2 {
+  font-size: 1.75rem;
+}
+.menu__info .heart {
+  margin-right: 3%;
+  font-size: 1.6rem;
 }
 
 /*    pages/about
