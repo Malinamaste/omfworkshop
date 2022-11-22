@@ -11,13 +11,17 @@
     box-shadow: 0 2px 10px 0 rgb(0 0 0 / 20%);
 }
 
+@mixin menu-item-shadow {
+    box-shadow: 0 1px 5px 0 rgb(0 0 0 / 20%);
+}
+
 @mixin btn {
     color: $colour-white;
     background: linear-gradient(172deg, $colour-secondary 20%, rgba(147,86,220,0.8533788515406162) 82%);
     padding: $padding $padding + 0.5rem;
     border-radius: 30px;
     text-decoration: none;
-    margin: 18px 0;
+    margin: $padding 0;
     @include shadow;
     transition: 0.3s;
     position: relative;
@@ -97,6 +101,7 @@
         &:hover {
             animation: fill 0.3s ease-in-out;
             background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+            background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             font-weight: bold;
@@ -130,7 +135,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    padding: 2rem 0.5rem;
+    padding: 2rem 0.5rem 0;
     h2 {
         font-size: 1.75rem;
     }

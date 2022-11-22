@@ -13,17 +13,21 @@
         }
     }
     &-title {
-        margin-left: .5rem;
+        margin: 2rem 0.5rem 0.5rem;
         text-transform: uppercase;
         h3 {
             font-weight: 100;
             font-size: 1rem;
+            margin-bottom: 0.2rem;
         }
         > div {
             width: 2.5rem;
-            height: .2rem;
+            height: 0.2rem;
             background: $colour-tertiary;
         }
+    }
+    &__btn{
+        @include flex-center;
     }
 }
 
@@ -34,20 +38,15 @@
     right: 0;
     top: 0;
     bottom: 0;
-    background: #f4f9f8;
     transform-origin: top left;
     animation: menu $dur $delay both;
     z-index: -1;
 }
 
 .menu {
-    /*min-width: 33vh;*/
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /*padding: 1rem;
-    background: pink;*/
-    /*overflow: hidden;*/
     transform-origin: top left;
     position: relative;
     animation: menu 661ms both;
@@ -62,14 +61,14 @@
     }
     &__item {
         padding: .75rem;
-        margin: .25rem;
+        margin: 0.4rem;
         background: $colour-white;
         animation: menu__item 810ms cubic-bezier(.1,.9,.1,1) both;
         position: relative;
         border-radius: 15px;
-        @include shadow;
+        @include menu-item-shadow;
         h4 {
-            font-size: 1.15rem;
+            font-size: 1.1rem;
             font-weight: 400;
         }
         &-accent {
@@ -81,9 +80,9 @@
             width: .25rem;
             /*background-color: pink;*/
             animation: menu__accent 400ms both;
-            &--active {
-                /*background-color: lightblue;*/
-            }
+            /*&--active {
+                background-color: lightblue;
+            }*/
         }
         &--1 {
             animation-delay: 475ms;
@@ -110,31 +109,18 @@
             line-height: 1.5em;
             p {
                 font-weight: 100;
-                font-size: .95rem;
+                font-size: 0.95rem;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+                margin-right: 0.5rem;
+            }
+            span {
+                margin-right: 1rem;
             }
         }
-    }
-}
-
-@keyframes menu {
-    0% {
-        transform: scale(0,.07);
-    }
-    33% {
-        transform: scale(1,.07);
-        animation-timing-function: cubic-bezier(.73,.01,.2,.99)
-    }
-
-}
-
-@keyframes menu__item {
-    0% {
-        transform: translateX(-110%);
-    }
-}
-
-@keyframes menu__accent {
-    0% {
-        transform: scaleY(0);
+        &:hover {
+            box-shadow: 0 3px 7px 0 rgb(0 0 0 / 20%);
+        }
     }
 }

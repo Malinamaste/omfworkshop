@@ -1,3 +1,8 @@
 .btn {
     @include btn;
+    &--menu {
+        @include btn;
+        padding: $padding $padding * 3;
+        margin: $padding * 2 0;
+    }
 }
