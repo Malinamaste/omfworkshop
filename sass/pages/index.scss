@@ -40,15 +40,13 @@
 
 .cards-list {
     margin: 1.4rem 0 1rem;
-    display: flex;
+    @include flex-space-b;
     flex-direction: column;
-    justify-content: space-between;
     min-height: 1075px;
 }
 
 .description {
-    display: flex;
-    justify-content: space-between;
+    @include flex-space-b;
     align-items: center;
     margin: 0 20px 0 15px;
     padding-top: 0.8rem;

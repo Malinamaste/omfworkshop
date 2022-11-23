@@ -9,9 +9,8 @@
         font-weight: 200;
     }
     ul {
-        display: flex;
+        @include flex-space-b;
         flex-direction: column;
-        justify-content: space-between;
         min-height: 100px;
     }
     a {

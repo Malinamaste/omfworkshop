@@ -1,4 +1,3 @@
-/* _functions */
 @keyframes menu {
   0% {
     transform: scale(0, 0.07);
@@ -200,8 +199,8 @@ h2 {
 }
 .footer ul {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
+  flex-direction: column;
   min-height: 100px;
 }
 .footer a {
@@ -303,8 +302,8 @@ h2 {
 .cards-list {
   margin: 1.4rem 0 1rem;
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
+  flex-direction: column;
   min-height: 1075px;
 }
 
@@ -317,7 +316,12 @@ h2 {
 }
 
 .full-menu__header {
+  max-height: 16.5rem;
+  display: flex;
+}
+.full-menu__header img {
   width: 100%;
+  object-fit: cover;
 }
 .full-menu__container {
   background-color: rgb(248, 248, 248);
@@ -336,6 +340,7 @@ h2 {
 }
 .full-menu__info h2 {
   font-size: 1.75rem;
+  letter-spacing: 0.5px;
 }
 .full-menu__info .heart {
   margin-right: 3%;
@@ -362,36 +367,11 @@ h2 {
 
 .menu {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
+  flex-direction: column;
   transform-origin: top left;
   position: relative;
   animation: menu 661ms both;
-  z-index: 0;
-}
-.menu__open-accent--1 {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  transform-origin: top left;
-  animation: menu 450ms 275ms both;
-  z-index: -1;
-}
-.menu__open-accent--2 {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  transform-origin: top left;
-  animation: menu 450ms 150ms both;
-  z-index: -1;
-  background: rgb(248, 248, 248);
-  z-index: -2;
 }
 .menu__item {
   padding: 0.75rem;
@@ -405,14 +385,17 @@ h2 {
 .menu__item h4 {
   font-size: 1.1rem;
   font-weight: 400;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .menu__item-accent {
   content: "";
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 0;
-  width: 0.25rem;
+  right: 0;
+  width: 0.2rem;
   /*background-color: pink;*/
   animation: menu__accent 400ms both;
   /*&--active {
@@ -437,6 +420,12 @@ h2 {
 .menu__item--3 > div {
   animation-delay: 914ms;
 }
+.menu__item--4 {
+  animation-delay: 712ms;
+}
+.menu__item--4 > div {
+  animation-delay: 1000ms;
+}
 .menu__item-inline {
   display: flex;
   justify-content: space-between;
@@ -457,8 +446,5 @@ h2 {
 .menu__item:hover {
   box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.2);
 }
-
-/*    pages/about
-    pages/project   */
 
 /*# sourceMappingURL=main.css.map */

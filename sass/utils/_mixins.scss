@@ -3,6 +3,11 @@
     justify-content: center;
 }
 
+@mixin flex-space-b {
+    display: flex;
+    justify-content: space-between;
+}
+
 @mixin shadow {
     box-shadow: 0 6px 8px 0 rgb(0 0 0 / 20%);
 }
@@ -121,6 +126,15 @@
     color: darken($colour-mint, 40%);
 }
 
+@mixin menu-header {
+    max-height: 16.5rem;
+    display: flex;
+    img {
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
 @mixin bkgd-menu {
     background-color: $colour-light-grey;
     border-top-left-radius: 35px;
@@ -138,5 +152,6 @@
     padding: 2rem 0.5rem 0;
     h2 {
         font-size: 1.75rem;
+        letter-spacing: 0.5px;
     }
 }
