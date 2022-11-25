@@ -148,6 +148,35 @@ h2 {
   width: 42%;
 }
 
+@media only screen and (min-width : 768px) {
+  header__logo img {
+    width: 50%;
+  }
+  .btn {
+    padding: 1.2rem 4rem;
+    margin: 0.7rem 0;
+  }
+  .nav {
+    display: flex;
+    justify-content: center;
+  }
+  .nav__link a {
+    position: relative;
+    padding: 1.8rem 7rem 1.8rem 5rem;
+  }
+  .nav__link a i {
+    margin: 0 2rem 0 0;
+  }
+  .nav__link--number {
+    position: absolute;
+    left: 1.5rem;
+  }
+}
+@media only screen and (min-width : 992px) {
+  header {
+    background: pink;
+  }
+}
 .card {
   max-height: 255px;
   display: flex;
@@ -314,6 +343,7 @@ h2 {
   border: none;
   background: none;
   text-align: center;
+  outline: none;
 }
 
 #explore {
@@ -337,37 +367,35 @@ h2 {
   padding: 3.3rem 1.2rem;
   background: rgb(248, 248, 248);
 }
-
-.nav {
+.container .nav {
   margin: 1.5rem 0;
 }
-.nav ul {
+.container .nav ul {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
+  flex-direction: column;
   min-height: 278px;
 }
-.nav__link {
+.container .nav__link {
   background: rgb(248, 248, 248);
   border-radius: 22px;
   box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2);
 }
-.nav__link a {
-  padding: 1.7rem 0;
+.container .nav__link a {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   padding: 1.6rem;
 }
-.nav__link a i {
-  color: grey;
+.container .nav__link a i {
+  color: #797979;
   font-size: 1.2rem;
   margin: 0 1.5rem;
 }
-.nav__link a span {
+.container .nav__link a span {
   font-weight: 500;
 }
-.nav__link--number {
+.container .nav__link--number {
   background-color: #9356DC;
   color: #FFF;
   border-radius: 50%;
@@ -375,13 +403,37 @@ h2 {
   margin-left: -40px;
   font-size: 0.8rem;
 }
-.nav__link:hover {
+.container .nav__link:hover {
   background: rgba(194, 180, 237, 0.3);
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   border-radius: 22px;
 }
-.nav__link:hover i {
+.container .nav__link:hover i {
   color: #9356DC;
+}
+@media only screen and (min-width : 768px) {
+  .container .nav header__logo img {
+    width: 50%;
+  }
+  .container .nav .btn {
+    padding: 1.2rem 4rem;
+    margin: 0.7rem 0;
+  }
+  .container .nav .nav {
+    display: flex;
+    justify-content: center;
+  }
+  .container .nav .nav__link a {
+    position: relative;
+    padding: 1.8rem 7rem 1.8rem 5rem;
+  }
+  .container .nav .nav__link a i {
+    margin: 0 2rem 0 0;
+  }
+  .container .nav .nav__link--number {
+    position: absolute;
+    left: 1.5rem;
+  }
 }
 
 .cards-list {
@@ -391,8 +443,7 @@ h2 {
   flex-direction: column;
   min-height: 1075px;
 }
-
-.description {
+.cards-list .description {
   display: flex;
   justify-content: space-between;
   align-items: center;

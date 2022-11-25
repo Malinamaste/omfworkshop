@@ -55,9 +55,8 @@
 @mixin nav {
     margin: $padding + .5rem 0;
     ul{
-        display: flex;
+        @include flex-space-b;
         flex-direction: column;
-        justify-content: space-between;
         min-height: 278px;
     }
     &__link {
@@ -65,13 +64,12 @@
         border-radius: 22px;
         @include shadow;
         & a {
-            padding: 1.7rem 0;
             display: flex;
             align-items: center;
             justify-content: flex-start;
             padding: 1.6rem;
             i {
-                color: grey;
+                color: darken($colour-light-grey, 50%);
                 font-size: 1.2rem;
                 margin: 0 1.5rem;
             }
@@ -146,8 +144,7 @@
 
 @mixin menu-title {
     font-family: 'Shrikhand', cursive;
-    display: flex;
-    justify-content: space-between;
+    @include flex-space-b;
     align-items: flex-end;
     padding: 2rem 0.5rem 0;
     h2 {
@@ -180,8 +177,7 @@
             white-space: nowrap;
         }
         &-accent {
-            display: flex;
-            justify-content: center;
+            @include flex-center;
             align-items: center;
             background-color: $colour-tertiary;
             width: 4rem;
@@ -235,6 +231,48 @@
             &:hover .fa-circle-check {
                 transform: rotate(360deg) ;
             }
+        }
+    }
+}
+
+// RESPONSIVE MIXINS :
+@mixin tablet {
+    @media #{$tablet-responsive} {
+        header {
+            &__logo {
+                img {
+                    width: 50%;
+                    
+                }
+            }
+        }
+        .btn {
+            padding: $padding + .2 $padding * 4;
+            margin: 0.7rem 0;
+        }
+        .nav {
+            @include flex-center;
+            &__link {
+                & a {
+                    position: relative;
+                    padding: 1.8rem 7rem 1.8rem 5rem;
+                    i {
+                        margin: 0 2rem 0 0;
+                    }
+                }
+                &--number {
+                    position: absolute;
+                    left: 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+@mixin desktop {
+    @media #{$desktop-responsive} {
+        header {
+            background: pink;
         }
     }
 }
