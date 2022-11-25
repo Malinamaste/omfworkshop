@@ -13,7 +13,7 @@
             width: 42%;
         }
     }
+    @include media-min($desktop) {
+        background: yellow;
+    }
 }
-
-@include tablet;
-@include desktop;

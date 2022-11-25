@@ -81,6 +81,12 @@ h2 {
   transition: opacity 250ms;
   box-shadow: 0 7px 9px 0 rgba(0, 0, 0, 0.2);
 }
+@media screen and (min-width: 768px) {
+  .btn {
+    padding: 1.2rem 4rem;
+    margin: 0.7rem 0;
+  }
+}
 .btn--menu {
   color: #FFF;
   background: linear-gradient(172deg, #FF79DA 20%, rgba(147, 86, 220, 0.8533788515) 82%);
@@ -111,6 +117,12 @@ h2 {
   z-index: -1;
   transition: opacity 250ms;
   box-shadow: 0 7px 9px 0 rgba(0, 0, 0, 0.2);
+}
+@media screen and (min-width: 768px) {
+  .btn--menu {
+    padding: 1.2rem 4rem;
+    margin: 0.7rem 0;
+  }
 }
 
 .heart {
@@ -147,36 +159,12 @@ h2 {
 .header__logo img {
   width: 42%;
 }
+@media screen and (min-width: 992px) {
+  .header {
+    background: yellow;
+  }
+}
 
-@media only screen and (min-width : 768px) {
-  header__logo img {
-    width: 50%;
-  }
-  .btn {
-    padding: 1.2rem 4rem;
-    margin: 0.7rem 0;
-  }
-  .nav {
-    display: flex;
-    justify-content: center;
-  }
-  .nav__link a {
-    position: relative;
-    padding: 1.8rem 7rem 1.8rem 5rem;
-  }
-  .nav__link a i {
-    margin: 0 2rem 0 0;
-  }
-  .nav__link--number {
-    position: absolute;
-    left: 1.5rem;
-  }
-}
-@media only screen and (min-width : 992px) {
-  header {
-    background: pink;
-  }
-}
 .card {
   max-height: 255px;
   display: flex;
@@ -306,10 +294,14 @@ h2 {
 }
 .footer__logo {
   font-family: "Shrikhand", cursive;
-  width: 6rem;
+  /*width: 6rem;*/
   margin-bottom: 1.1rem;
-  color: #FFF;
   font-weight: 200;
+}
+@media screen and (min-width: 768px) {
+  .footer__logo {
+    text-align: center;
+  }
 }
 .footer ul {
   display: flex;
@@ -319,8 +311,6 @@ h2 {
 }
 .footer a {
   color: #FFF;
-  display: flex;
-  align-items: center;
 }
 .footer a i {
   margin-right: 10px;
@@ -328,6 +318,14 @@ h2 {
 }
 .footer__link:nth-child(2) i {
   font-size: 0.7rem;
+}
+@media screen and (min-width: 768px) {
+  .footer ul {
+    flex-direction: row;
+    min-height: 60px;
+    align-items: center;
+    justify-content: space-evenly;
+  }
 }
 
 .city {
@@ -369,6 +367,7 @@ h2 {
 }
 .container .nav {
   margin: 1.5rem 0;
+  /*@include tablet;*/
 }
 .container .nav ul {
   display: flex;
@@ -411,26 +410,19 @@ h2 {
 .container .nav__link:hover i {
   color: #9356DC;
 }
-@media only screen and (min-width : 768px) {
-  .container .nav header__logo img {
-    width: 50%;
-  }
-  .container .nav .btn {
-    padding: 1.2rem 4rem;
-    margin: 0.7rem 0;
-  }
-  .container .nav .nav {
+@media screen and (min-width: 768px) {
+  .container .nav {
     display: flex;
     justify-content: center;
   }
-  .container .nav .nav__link a {
+  .container .nav__link a {
     position: relative;
     padding: 1.8rem 7rem 1.8rem 5rem;
   }
-  .container .nav .nav__link a i {
+  .container .nav__link a i {
     margin: 0 2rem 0 0;
   }
-  .container .nav .nav__link--number {
+  .container .nav__link--number {
     position: absolute;
     left: 1.5rem;
   }
@@ -442,6 +434,18 @@ h2 {
   justify-content: space-between;
   flex-direction: column;
   min-height: 1075px;
+}
+@media screen and (min-width: 768px) {
+  .cards-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 590px;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .cards-list .card {
+    max-width: 350px;
+  }
 }
 .cards-list .description {
   display: flex;
@@ -466,6 +470,11 @@ h2 {
   position: relative;
   margin-top: -2rem;
   padding: 0.5rem;
+}
+@media screen and (min-width: 768px) {
+  .full-menu__container {
+    padding: 0.5rem 1rem;
+  }
 }
 .full-menu__info {
   font-family: "Shrikhand", cursive;
@@ -499,6 +508,11 @@ h2 {
 .full-menu__btn {
   display: flex;
   justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .full-menu__btn {
+    margin: 2rem 0;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

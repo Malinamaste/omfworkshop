@@ -28,5 +28,8 @@
     }
     &__btn{
         @include flex-center;
+        @include media-min($tablet) {
+            margin: 2rem 0;
+        }
     }
 }

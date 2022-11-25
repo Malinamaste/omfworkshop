@@ -38,7 +38,7 @@
     }
     .nav {
         @include nav;
-        @include tablet;
+        /*@include tablet;*/
     }
 }
 
@@ -48,6 +48,16 @@
     @include flex-space-b;
     flex-direction: column;
     min-height: 1075px;
+    @include media-min($tablet) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        min-height: 590px;
+        align-items: center;
+        justify-content: space-around;
+        .card {
+            max-width: 350px;
+        }
+    }
     .description {
         @include flex-space-b;
         align-items: center;
