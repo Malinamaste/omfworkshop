@@ -3,6 +3,9 @@
     @include flex-center;
     background: darken($colour-light-grey, 5%);
     padding: $padding;
+    @include media-min($desktop) {
+        padding: $padding + .5;
+    }
     &__icon {
         color: #424242;
     }
@@ -32,13 +35,17 @@
 // FONCTIONNEMENT
 .container {
     padding: 3rem 1.2rem 3rem 1.6rem;
+    @include media-min($desktop) {
+        h2 {
+            text-align: center;
+        }
+    }
     &__cards {
         padding: 3.3rem 1.2rem;
         background: $colour-light-grey;
     }
     .nav {
         @include nav;
-        /*@include tablet;*/
     }
 }
 
@@ -56,6 +63,11 @@
         justify-content: space-around;
         .card {
             max-width: 350px;
+        }
+    }
+    @include media-min($desktop) {
+        .card {
+            max-width: 600px;
         }
     }
     .description {

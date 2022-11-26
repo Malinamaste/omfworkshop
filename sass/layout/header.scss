@@ -5,6 +5,9 @@
         position: absolute;
         left: 5%;
         top: 3%;
+        @include media-min($desktop) {
+            top: 5%;
+        }
     }
     &__logo {
         @include flex-center;
@@ -12,8 +15,11 @@
         img {
             width: 42%;
         }
-    }
-    @include media-min($desktop) {
-        background: yellow;
+        @include media-min($desktop) {
+            margin: 0.9em 0 0.6em 0;
+            img {
+                width: 50%;
+            }
+        }
     }
 }

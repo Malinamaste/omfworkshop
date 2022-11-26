@@ -115,6 +115,22 @@
             }
         }
     }
+    @include media-min($desktop) {
+        display: flex;
+        justify-content: center;
+        ul {
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+            min-height: 150px;
+            width: 95%;
+        }
+        &__link {
+            a {
+                padding: 1.8rem 4rem;
+            }
+        }
+    }
 }
 
 @mixin heart {

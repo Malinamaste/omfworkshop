@@ -7,6 +7,11 @@
     }
     &__info {
         @include menu-title;
+        @include media-min($desktop) {
+            h2 {
+                margin-left: $padding * 2;
+            }
+        }
         .heart {
             margin-right: 3%;
             font-size: 1.6rem;
@@ -30,6 +35,15 @@
         @include flex-center;
         @include media-min($tablet) {
             margin: 2rem 0;
+        }
+    }
+    @include media-min($desktop) {
+        &__box {
+            display: flex;
+            justify-content: space-evenly;
+            .box {
+                width: 30%;
+            }
         }
     }
 }
