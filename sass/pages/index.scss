@@ -1,3 +1,8 @@
+// LOADER
+.lds-roller {
+    @include loader;
+}
+
 // CHOIX VILLE
 .city {
     @include flex-center;
