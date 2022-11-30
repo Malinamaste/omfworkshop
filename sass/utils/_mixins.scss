@@ -172,7 +172,7 @@
             margin-left: -40px;
             font-size: 0.8rem;
         }
-        &:hover {
+        &:active, &:hover {
             background: rgba(194, 180, 237, 0.3);
             box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
             border-radius: 22px;
@@ -220,7 +220,7 @@
     cursor: pointer;
     &--fill {
         color: grey;
-        &:hover {
+        &:active, &:hover {
             animation: fill 0.3s ease-in-out;
             background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
             background-clip: text;
@@ -297,6 +297,7 @@
             text-overflow: ellipsis;
             overflow: hidden;
             white-space: nowrap;
+            margin-right: 4rem;
         }
         &-accent {
             @include flex-center;
@@ -333,24 +334,37 @@
             line-height: 1.5em;
             p {
                 font-weight: 100;
-                font-size: 0.95rem;
+                font-size: 0.9rem;
                 text-overflow: ellipsis;
                 overflow: hidden;
                 white-space: nowrap;
-                margin-right: 0.5rem;
+                margin-right: 1.3rem;
             }
             span {
-                margin-right: 1rem;
+                margin-right: $padding;
+                font-size: .95rem;
+                color: darken($colour-light-grey, 70%);
             }
         }
-        &:hover {
+        &:active, &:hover {
             box-shadow: 0 3px 7px 0 rgb(0 0 0 / 20%);
             padding-right: $padding * 4;
-            &:hover .menu__item-accent {
+            h4 {
+                margin-right: 5rem;
+                @include media-min($desktop) {
+                    margin-right: 7rem;
+                }
+            }
+            p {
+                @include media-min($desktop) {
+                    margin-right: 7.5rem;
+                }
+            }
+            .menu__item-accent {
                 opacity: 1;
                 transform: translate(-3rem);
             }
-            &:hover .fa-circle-check {
+            .fa-circle-check {
                 transform: rotate(360deg) ;
             }
         }

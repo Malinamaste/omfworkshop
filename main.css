@@ -170,7 +170,7 @@ h2 {
 .heart--fill {
   color: grey;
 }
-.heart--fill:hover {
+.heart--fill:active, .heart--fill:hover {
   animation: fill 0.3s ease-in-out;
   background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
   background-clip: text;
@@ -245,7 +245,7 @@ h2 {
   font-weight: 100;
   font-size: 1.05rem;
 }
-.card:hover {
+.card:active, .card:hover {
   box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -275,6 +275,7 @@ h2 {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+  margin-right: 4rem;
 }
 .menu__item-accent {
   display: flex;
@@ -314,24 +315,39 @@ h2 {
 }
 .menu__item-inline p {
   font-weight: 100;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-  margin-right: 0.5rem;
+  margin-right: 1.3rem;
 }
 .menu__item-inline span {
   margin-right: 1rem;
+  font-size: 0.95rem;
+  color: #464646;
 }
-.menu__item:hover {
+.menu__item:active, .menu__item:hover {
   box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.2);
   padding-right: 4rem;
 }
-.menu__item:hover:hover .menu__item-accent {
+.menu__item:active h4, .menu__item:hover h4 {
+  margin-right: 5rem;
+}
+@media screen and (min-width: 992px) {
+  .menu__item:active h4, .menu__item:hover h4 {
+    margin-right: 7rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .menu__item:active p, .menu__item:hover p {
+    margin-right: 7.5rem;
+  }
+}
+.menu__item:active .menu__item-accent, .menu__item:hover .menu__item-accent {
   opacity: 1;
   transform: translate(-3rem);
 }
-.menu__item:hover:hover .fa-circle-check {
+.menu__item:active .fa-circle-check, .menu__item:hover .fa-circle-check {
   transform: rotate(360deg);
 }
 
@@ -541,12 +557,12 @@ h2 {
   margin-left: -40px;
   font-size: 0.8rem;
 }
-.container .nav__link:hover {
+.container .nav__link:active, .container .nav__link:hover {
   background: rgba(194, 180, 237, 0.3);
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   border-radius: 22px;
 }
-.container .nav__link:hover i {
+.container .nav__link:active i, .container .nav__link:hover i {
   color: #9356DC;
 }
 @media screen and (min-width: 768px) {
