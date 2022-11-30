@@ -12,14 +12,21 @@
 @mixin loader {
     @include flex-center;
     align-items: center;
-    background:-webkit-linear-gradient($colour-white, $colour-secondary, $colour-primary);
-    width: 100%;
+    width: 80%;
     height: 100%;
     position: fixed;
-    z-index: 9999;
     pointer-events: none;
     animation: loader 1s ease-in-out 3s forwards;
+    @include media-min($tablet) {
+        width: 90%;
+        height: 120%;
+    }
+    @include media-min($desktop) {
+        width: 95%;
+        height: 150%;
+    }
     div {
+        margin-bottom: 40%;
         animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
         transform-origin: 40px 40px;
         &::after {
