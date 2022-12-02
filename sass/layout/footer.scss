@@ -3,7 +3,6 @@
     padding: $padding + .9rem;
     &__logo {
         font-family: 'Shrikhand', cursive;
-        /*width: 6rem;*/
         margin-bottom: 1.1rem;
         font-weight: 200;
         @include media-min($tablet) {
