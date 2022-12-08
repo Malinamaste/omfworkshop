@@ -24,11 +24,11 @@ b) Permettre la réservation en ligne et la composition de menus.
 
 # Technologies
 
-Autorisés: HTML / CSS / Sass
+Autorisées: HTML / CSS / Sass
 
-Recommandée: HTML / Sass
+Recommandées: HTML / Sass
 
-Interdit: Javascript / Frameworks CSS / Inline CSS
+Interdites: Javascript / Frameworks CSS / Inline CSS
 
 # Notes
 
