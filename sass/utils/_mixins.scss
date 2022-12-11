@@ -228,7 +228,7 @@
     &--fill {
         color: grey;
         &:active, &:hover {
-            animation: fill 0.3s ease-in-out;
+            animation: fill .8s ease-in-out;
             background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
             background-clip: text;
             -webkit-background-clip: text;
@@ -287,14 +287,14 @@
     flex-direction: column;
     transform-origin: top left;
     position: relative;
-    animation: menu 666ms both;
     &__item {
         padding: .75rem;
         margin: 0.4rem;
         background: $colour-white;
-        animation: menu__item 810ms cubic-bezier(.1,.9,.1,1) both;
+        animation: menu__item 1s ease-out 3s both;
         position: relative;
         border-radius: 15px;
+        cursor: pointer;
         @include menu-item-shadow;
         overflow: hidden;
         transition: padding-right 450ms ease-in-out;
@@ -313,10 +313,9 @@
             width: 4rem;
             height: 4.3rem;
             position: absolute;
-            right: -50px;
+            right: -65px;
             top: 0;
-            opacity: 0;
-            transition: transform 330ms ease-in-out;
+            transition: all 0.5s cubic-bezier(0.1, 0, 0.2, 1);
             & .fa-circle-check {
                 color: #fff;
                 font-size: 1.5rem;
@@ -369,7 +368,7 @@
             }
             .menu__item-accent {
                 opacity: 1;
-                transform: translate(-3rem);
+                transform: translate(-4rem);
             }
             .fa-circle-check {
                 transform: rotate(360deg) ;
